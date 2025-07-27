@@ -55,7 +55,7 @@ cd MLNotebooks
 
 2:Create a virtual environment
 python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
+source .venv/bin/activate      
 
 3:Install requirements
 pip install -r requirements.txt
@@ -83,8 +83,7 @@ jupyter lab
    Obtain the **CICIoV2024** decimal‑format CSV (https://www.unb.ca/cic/datasets/iov-dataset-2024.html) and place it in a `data/` directory or adjust the path in each notebook’s first cell.
 
 2. **Choose your experiment flow**  
-   *Run notebooks in `split/` first if you want the classic 80 / 20 hold‑out results. 
-   *Run notebooks in `kfold/` for full 10‑fold CV results .
+   Run notebooks in `split/` first if you want the classic 80 / 20 hold‑out results or run notebooks in `kfold/` for full 10‑fold CV results .
 
 3. **Compare metrics**  
    Macro‑F1, precision and recall scores printed at the end of each notebook should match those in the paper.
@@ -103,6 +102,8 @@ jupyter lab
   pages   = {162},
   year    = {2025},
   doi     = {10.3390/fi17040162}
-}
+} 
 ```
+## Questions
 
+For any questions, feel free to send an email: a2023113935@isec.pt
