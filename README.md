@@ -49,18 +49,18 @@ MLNotebooks/
 ## Quick‑start
 
 ```bash
-# 1 – Clone the repo
+1:Clone the repo
 git clone https://github.com/<your‑user>/MLNotebooks.git
 cd MLNotebooks
 
-# 2 – Create a virtual environment
+2:Create a virtual environment
 python -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
 
-# 3 – Install requirements
+3:Install requirements
 pip install -r requirements.txt
 
-# 4 – Launch Jupyter
+4:Launch Jupyter
 jupyter lab
 ```
 
@@ -80,29 +80,14 @@ jupyter lab
 ## Reproducing the paper
 
 1. **Download the dataset**  
-   Obtain the **CICIoV2024** decimal‑format CSV (≈ 603 MB) and place it in a `data/` directory or adjust the path in each notebook’s first cell.
+   Obtain the **CICIoV2024** decimal‑format CSV (https://www.unb.ca/cic/datasets/iov-dataset-2024.html) and place it in a `data/` directory or adjust the path in each notebook’s first cell.
 
 2. **Choose your experiment flow**  
-   *Run notebooks in `split/` first if you want the classic 80 / 20 hold‑out results (mirrors Table 5).*  
-   *Run notebooks in `kfold/` for full 10‑fold CV results (mirrors Table 6).*
+   *Run notebooks in `split/` first if you want the classic 80 / 20 hold‑out results. 
+   *Run notebooks in `kfold/` for full 10‑fold CV results .
 
 3. **Compare metrics**  
    Macro‑F1, precision and recall scores printed at the end of each notebook should match those in the paper.
-
----
-
-## Key results
-
-| Model | 80 / 20 split macro‑F1 | 10‑fold CV macro‑F1 |
-|-------|------------------------|---------------------|
-| Random Forest    | **1.000** | **1.000** |
-| XGBoost          | **1.000** | **1.000** |
-| Extra Trees      | **1.000** | **1.000** |
-| Deep Neural Net  | **1.000** | **1.000** |
-| Logistic Regression | 0.88 | 0.88 |
-| AdaBoost         | 0.81 | 0.32 |
-
-Tree‑based ensembles and the tuned DNN consistently detect minority attack classes even without resampling.
 
 ---
 
