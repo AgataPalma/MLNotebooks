@@ -50,7 +50,7 @@ MLNotebooks/
 
 ```bash
 1:Clone the repo
-git clone https://github.com/<your‑user>/MLNotebooks.git
+git clone https://github.com/AgataPalma/MLNotebooks.git
 cd MLNotebooks
 
 2:Create a virtual environment
